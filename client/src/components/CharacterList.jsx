@@ -11,9 +11,35 @@ class CharacterList extends React.Component {
       name: "",
       hair: "",
       glasses: "",
-      gender: ""
-    }
+      gender: "",
+      characters: [
+        {
+          name: "Kate",
+          hair: "brown",
+          glasses: "no",
+          gender: "female"
+        },
+        {
+          name: "Martin",
+          hair: "blond",
+          glasses: "yes",
+          gender: "male"
+        },
+        {
+          name: "Maggie",
+          hair: "brown",
+          glasses: "no",
+          gender: "female"
+        },
+        {
+          name: "Angus",
+          hair: "grey",
+          glasses: "yes",
+          gender: "male"
+        }
+      ]
     // this.renderCharacter = this.renderCharacter.bind(this);
+  }
   }
 
   // renderCharacter(char) {
@@ -33,10 +59,10 @@ class CharacterList extends React.Component {
   render(){
     return(
       <section>
-        {/* {this.renderCharacter(0)}
-        {this.renderCharacter(1)}
-        {this.renderCharacter(2)}
-        {this.renderCharacter(3)} */}
+        <Character value={this.state.characters[0]}/>
+        <Character value={this.state.characters[1]}/>
+        <Character value={this.state.characters[2]}/>
+        <Character value={this.state.characters[3]}/>
       </section>
     )
   }
