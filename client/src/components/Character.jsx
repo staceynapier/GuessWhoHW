@@ -2,9 +2,9 @@ import React from 'react'
 
 class Character extends React.Component {
 
-  render() {
+  render(props) {
     return(
-      <button className="character-button">
+      <button className="character-button" onClick={this.props.onClick}>
         <ul>
           <li>Name: {this.props.value.name}</li>
           <li>Hair Colour: {this.props.value.hair}</li>

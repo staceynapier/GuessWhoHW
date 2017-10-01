@@ -1,32 +1,6 @@
-function setCharacter() {
-  const characters =  [
-      {
-        name: "Kate",
-        hair: "brown",
-        glasses: "no",
-        gender: "female"
-      },
-      {
-        name: "Martin",
-        hair: "blond",
-        glasses: "yes",
-        gender: "male"
-      },
-      {
-        name: "Maggie",
-        hair: "brown",
-        glasses: "no",
-        gender: "female"
-      },
-      {
-        name: "Angus",
-        hair: "grey",
-        glasses: "yes",
-        gender: "male"
-      }
-    ]
+function setCharacter(props) {
 
-  var randChar = characters[Math.floor(Math.random() * characters.length)];
+  var randChar = props[Math.floor(Math.random() * props.length)];
   return randChar;
 
 }
